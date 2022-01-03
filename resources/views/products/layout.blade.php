@@ -15,7 +15,7 @@
       <title>welcome</title>
 </head>
 <body>
-    <h1 class="text-4xl" >laravel 8 CRUD WEB APP</h1>
+    <h1 class="text-3xl bg-dark text-light text-center py-4 underline rounded-b-md" >laravel 8 CRUD WEB APP</h1>
     <div class="container">
         <br>
         @yield('content')
