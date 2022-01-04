@@ -3,6 +3,49 @@
 @tailwind utilities;
 
 .create-form {
+    width: 100%;
+    margin-top: 30px;
     border: 1px solid black;
     border-radius: 20px;
+    padding: 10px;
+}
+
+.list-products {
+    margin-top: 70px;
+}
+.success {
+    position: absolute;
+    top: 0;
+    margin-top: -57px;
+    text-align: center;
+    background-color: lightgreen;
+    animation: animate 5s ease;
+}
+@keyframes animate {
+    0% {
+        margin-top: -57px;
+    }
+
+    40% {
+        margin-top: 0px;
+    }
+    60% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -57px;
+    }
+}
+
+.pull-right {
+    position: absolute;
+    right: 40%;
+}
+.info > .form-group {
+    margin-bottom: 20px;
+}
+.info > .form-group > p {
+    width: auto;
+    word-wrap: break-word;
 }
