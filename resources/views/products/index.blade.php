@@ -32,6 +32,7 @@
                             <td class="overflow-hidden max-w-xs ">{{ $product->detail}}</td>
                             <form action="{{ route('products.destroy',$product->id) }}" method="post">
                                 @csrf
+                                @method('DELETE')
                                 {{-- btn for edit --}}
                                 <td>
                                     <a href="{{ route('products.edit',$product->id) }}"

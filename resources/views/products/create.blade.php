@@ -18,13 +18,21 @@
             <div class="mb-3">
                 <label for="detail">Detail:</label>
                 <textarea class="form-control" placeholder="Detail" 
-                name="detail" id="detail" rows="3">
-
-                </textarea>
+                name="detail" id="detail" rows="3"></textarea>
             </div>
             <div class="d-flex justify-content-center" >
                 <button class="btn btn-outline-success " type="submit">Create</button>
             </div>
         </div>
     </form>
+     @if($errors->any())
+        <div class="create-error alert alert-danger" >
+            <strong>Whoops</strong> there are some problems with your input <br>
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+     @endif
 @endsection

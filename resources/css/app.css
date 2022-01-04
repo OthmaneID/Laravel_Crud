@@ -49,3 +49,30 @@
     width: auto;
     word-wrap: break-word;
 }
+
+.create-error {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    margin-top: -110px;
+    animation: fade 4s ease;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+        margin-top: 0;
+    }
+
+    80% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+.edit-form > form {
+    margin-top: 20px;
+}
